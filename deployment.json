@@ -1,0 +1,18 @@
+{
+  "network": "StudioNet",
+  "chainId": 61999,
+  "contractAddress": "0x807B5Da65f1a3570251F373E4eDade5Eb26C35B0",
+  "deploymentTransaction": "0xe7921337766a3de09e4a29d12b86e3493c9967a6c96d63607859eba89363ba52",
+  "deploymentStatus": "FINALIZED",
+  "deploymentExecution": "SUCCESS",
+  "sourceCommit": "4a94b6c",
+  "sourceMatchVerified": true,
+  "smokeFileTransaction": "0x2941871520d9573fd4b82b77547c066de736e9a0ba26ca449b5aa8c2cc9cff81",
+  "smokeAuditTransaction": "0xd2dc6e4d0f518f90090c96d1c89fa530994c3647dc5cef4a6444a897b2dc8141",
+  "smokeStatus": "FINALIZED",
+  "smokeExecution": "SUCCESS",
+  "smokeRecordId": "LIVE-1789230055",
+  "smokeRecordState": "AUDITED",
+  "smokeDigestCount": 3,
+  "publicSite": "https://sanshos1.github.io/protocol-mirror/"
+}
