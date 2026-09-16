@@ -1,0 +1,9 @@
+PROTOCOL MIRROR DEMONSTRATION FIXTURE — PREREGISTRATION
+
+Primary outcome: participant retention measured at day 30.
+Sample method: enroll exactly 300 eligible participants.
+Exclusion rule: no post-enrollment exclusions.
+Analysis plan: preregistered logistic regression with treatment assignment as the primary predictor.
+Stopping rule: stop after the 300th eligible participant completes day 30.
+
+This operator-created record is a deterministic technical fixture, not independent research evidence.

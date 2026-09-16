@@ -1,0 +1,5 @@
+PROTOCOL MIRROR DEMONSTRATION FIXTURE — CORRECTIVE RESPONSE
+
+The owner acknowledges that the publication changed the primary outcome, sample size, exclusion rule, analysis plan, and stopping rule. The response does not alter the original records; it publicly discloses the changes for validator review.
+
+This operator-created record is a deterministic technical fixture.

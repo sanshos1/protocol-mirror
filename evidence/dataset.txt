@@ -1,0 +1,7 @@
+PROTOCOL MIRROR DEMONSTRATION FIXTURE — DATASET SUMMARY
+
+The archived technical fixture contains 180 analyzed participant rows.
+Its documented outcome column is day_7_engagement.
+Forty-two post-enrollment records are absent from the analyzed table.
+
+This operator-created record exists only to exercise digest binding and divergence review.

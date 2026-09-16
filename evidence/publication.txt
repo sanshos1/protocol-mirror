@@ -1,0 +1,9 @@
+PROTOCOL MIRROR DEMONSTRATION FIXTURE — PUBLICATION
+
+Primary outcome: participant engagement measured at day 7.
+Sample method: analyze 180 enrolled participants.
+Exclusion rule: remove 42 participants after enrollment for incomplete follow-up.
+Analysis plan: exploratory linear model selected after observing the data.
+Stopping rule: enrollment stopped early after the interim analysis.
+
+This intentionally conflicts with the preregistration so the remediation lifecycle can be tested.
