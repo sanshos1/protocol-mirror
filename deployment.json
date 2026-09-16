@@ -10,6 +10,8 @@
   "deploymentExecution": "SUCCESS",
   "sourceCommit": "f0f4fb73e571366fe27844b24c31c9d3328970b7",
   "sourceMatchVerified": true,
+  "frontendCommit": "d3d33bd2af28869db441470600c83c31c5e78af7",
+  "productionBuildVerified": true,
   "liveRecordId": "REMEDIATION-1789588049",
   "liveRecordState": "FINAL",
   "liveAuditDigestCount": 3,
