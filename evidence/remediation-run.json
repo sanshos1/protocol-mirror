@@ -1,0 +1,18 @@
+{
+  "network": "StudioNet",
+  "contract": "0x36eF34db3a43E317408Cc564FC1F6c27ab59B3Ec",
+  "deploymentTransaction": "0x0e9b96244b4d9ae7312ec938c1c870d1156d50a6cbac48da2a9cbfbbfadafc32",
+  "recordId": "REMEDIATION-1789588049",
+  "transactions": {
+    "file": "0x3b613dee359e03993f16a592c43e8bb00d00548c7c8bc014d42513cf1c0747a6",
+    "audit": "0x22770240fd5f5796ef8fea0acf6cdb2632cca96f5d203821d00f0f8b01ca7227",
+    "respond": "0x7af117e96ea77faa6001668619217f7c792c5204bf4f5638cdab9ccc27588151",
+    "reviewResponse": "0x69b816508b6d744542b16be1e1bf8270e4249fafd2cb4f41ba14635b1f87a7ae"
+  },
+  "state": "FINAL",
+  "auditFinding": "UNDISCLOSED_DEVIATION",
+  "auditDigestCount": 3,
+  "finalRuling": "PARTIAL",
+  "finalFinding": "DISCLOSED_DEVIATION",
+  "finalDigestCount": 4
+}

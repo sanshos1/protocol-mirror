@@ -20,11 +20,11 @@ def write(client,function,args):
 
 def main():
  env=(ROOT.parents[3]/'accounts.env').read_text();key=re.search(r'^ACCOUNT_3_GENLAYER_PRIVATE_KEY\s*=\s*"?([^"\r\n]+)',env,re.M).group(1).strip();client=create_client(chain=studionet,account=create_account(account_private_key=key));item='REMEDIATION-'+str(int(time.time()))
- sources=['https://www.iana.org/domains/reserved','https://www.rfc-editor.org/rfc/rfc2606.txt','https://example.com/']
- txs={};txs['file']=write(client,'file_packet',[item,'Cross-record identity audit','The preregistration, publication, and archived dataset are claimed to contain exactly identical protocol content.',sources,3600]);txs['audit']=write(client,'audit',[item]);record=client.read_contract(address=ADDRESS,function_name='get_packet',args=[item])
+ commit='3d32ad185cdbb0a25dd203039701f00b942c5037';sources=[f'https://raw.githubusercontent.com/sanshos1/protocol-mirror/{commit}/evidence/preregistration.txt',f'https://cdn.jsdelivr.net/gh/sanshos1/protocol-mirror@{commit}/evidence/publication.txt',f'https://github.com/sanshos1/protocol-mirror/raw/{commit}/evidence/dataset.txt']
+ txs={};txs['file']=write(client,'file_packet',[item,'Preregistration divergence audit','The preregistered primary outcome, sample method, exclusions, analysis plan, and stopping rule match the publication and dataset.',sources,3600]);txs['audit']=write(client,'audit',[item]);record=client.read_contract(address=ADDRESS,function_name='get_packet',args=[item])
  if record['state']!='AUDITED':raise RuntimeError('audit receipt finalized but canonical state is '+record['state'])
  if record['audit']['finding']=='ALIGNED':raise RuntimeError('fixture unexpectedly aligned; response path was not exercised')
- txs['respond']=write(client,'respond',[item,'The owner acknowledges that the three records are not identical and publishes this corrective disclosure.','https://www.python.org/about/']);txs['reviewResponse']=write(client,'review_response',[item]);record=client.read_contract(address=ADDRESS,function_name='get_packet',args=[item])
+ response=f'https://raw.githack.com/sanshos1/protocol-mirror/{commit}/evidence/response.txt';txs['respond']=write(client,'respond',[item,'The owner acknowledges every detected divergence and publishes a corrective disclosure without changing the original records.',response]);txs['reviewResponse']=write(client,'review_response',[item]);record=client.read_contract(address=ADDRESS,function_name='get_packet',args=[item])
  if record['state']!='FINAL' or len(record['audit']['digests'])!=3 or len(record['final']['review_digests'])!=4:raise RuntimeError('canonical final record is incomplete')
  print(json.dumps({'contract':ADDRESS,'recordId':item,'transactions':txs,'state':record['state'],'immutableAudit':record['audit'],'final':record['final']},indent=2,default=str))
 

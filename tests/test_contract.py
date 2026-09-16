@@ -8,5 +8,5 @@ def test_consensus_and_attribution():
  assert 'MIN_RESPONSE_SECONDS=300' in TEXT and 'MAX_RESPONSE_SECONDS=604800' in TEXT
 def test_browser_exposes_complete_revised_lifecycle():
  for method in ('file_packet','audit','respond','review_response','finalize_expired','get_packet'):assert method in PAGE
- assert "status:'FINALIZED'" in PAGE and 'PENDING_REDEPLOYMENT' in PAGE
+ assert "status:'FINALIZED'" in PAGE and '0x36eF34db3a43E317408Cc564FC1F6c27ab59B3Ec' in PAGE
  assert 'response window' in PAGE.lower() and 'READ CANONICAL RECORD' in PAGE
